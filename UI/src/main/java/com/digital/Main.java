@@ -163,7 +163,7 @@ public class Main {
     void test16(){
         driver.get("https://www.amazon.com");
 
-        WebElement search = driver.findElement(By.xpath("twotabsearchtextbox"));
+        WebElement search = driver.findElement(By.id("twotabsearchtextbox"));
         search.sendKeys("iphone");
 
         search.sendKeys(Keys.ENTER);
@@ -177,6 +177,7 @@ public class Main {
             checkbox.click();
             //StaleElementReferenceException: - ссылка на устаревший элемент
         }
+
     }
 
 }
